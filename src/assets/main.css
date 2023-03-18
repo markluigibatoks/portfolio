@@ -1,3 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+  font-family: 'Avalon';
+  src: url('/fonts/AvalonBold.woff2') format('woff2'),
+      url('/fonts/AvalonBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avalon';
+  src: url('/fonts/AvalonPlain.woff2') format('woff2'),
+      url('/fonts/AvalonPlain.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root { 
+    --accent: 42 30 210;
+    --purple: 237 241 255;
+    --violet: 71 62 195;
+    --lavender: 214 215 253;
+    --iris: 162 164 255;
+  }
+
+  html, body {
+    font-family: 'Barlow';
+    font-size: 16px;
+    color: #333333;
+    background: url('/images/background.png') no-repeat;
+  }
+
+  mark {
+    background: none;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  address {
+    font-style: normal;
+  }
+
+  .section-divider {
+    border-bottom: 2px solid white;
+  }
+}

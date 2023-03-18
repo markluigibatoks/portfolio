@@ -1,31 +1,62 @@
+<script setup>
+const socialMedia = ref([
+  { name: 'linkedin', url: '#', src: '/images/linkedin.png' },
+  { name: 'github', url: '#', src: '/images/github.png' }
+])
+</script>
+
 <template>
-  <header>
-    <base-container class="min-h-[60px]">
-      <base-logo>
-        <img
-          src="../assets/logo.svg"
-          alt="logo"
-          class="w-14 h-14"
-        >
-      </base-logo>
+  <header class="lg:py-0 py-10 lg:section-divider">
+    <base-container class="min-h-[66px]">
+      <div class="lg:flex lg:justify-between lg:items-center lg:min-h-[66px] text-center">
+        <ul class="lg:flex lg:gap-10 xl:gap-20 lg:mb-0 mb-5">
+          <li class="mx-auto w-fit relative pl-7 before:content-[url('images/phone.png')] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:flex">
+            <mark class="pb-1 block">(+63) 915 265 5585</mark>
+          </li>
+          <li class="mx-auto w-fit relative pl-7 before:content-[url('images/email.png')] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:flex">
+            <a
+              class="pb-1 block underline hover:no-underline"
+              href="mailto:markluigibatoks@gmail.com"
+              target="_blank"
+            >markluigibatoks@gmail.com</a>
+          </li>
+          <li class="mx-auto w-fit relative pl-7 before:content-[url('images/house.png')] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:flex">
+            <address class="block">
+              Cebu City, Philippines 6000
+            </address>
+          </li>
+        </ul>
 
-      <!-- <div class="head_info">
-          <h2>Contact <mark>number</mark></h2>
-        </div> -->
+        <section class="lg:flex lg:gap-6 lg:items-center">
+          <h2 class="lg:mb-0 mb-2">
+            Connect With Me
+          </h2>
+          <base-list
+            :items="socialMedia"
+            main-axis="horizontal"
+            main-axis-alignment="center"
+            :main-axis-spacing="3"
+          >
+            <template #item="{ item }">
+              <a :href="item.url">
+                <figure>
+                  <img
+                    :src="item.src"
+                    alt="logo"
+                  >
+                </figure>
+              </a>
+            </template>
+          </base-list>
 
-      <base-list
-        :items="Array.from({length: 2}, (_, i) => i)"
-        main-axis="horizontal"
-      >
-        <template #item>
-          <base-logo>
-            <img
-              src="../assets/logo.svg"
-              alt="logo"
-            >
-          </base-logo>
-        </template>
-      </base-list>
+          <base-button
+            color="#2A1ED2"
+            class="lg:block hidden z-10 min-w-[125px] min-h-[49px] absolute top-[140px] right-0 rounded-full text-white"
+          >
+            Resume
+          </base-button>
+        </section>
+      </div>
     </base-container>
   </header>
 </template>

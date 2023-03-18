@@ -9,7 +9,26 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    BaseButton: typeof import('./../components/BaseButton.vue')['default']
+    BaseContainer: typeof import('./../components/BaseContainer.vue')['default']
+    BaseGridList: typeof import('./../components/BaseGridList.vue')['default']
+    BaseHamburger: typeof import('./../components/BaseHamburger.vue')['default']
+    BaseList: typeof import('./../components/BaseList.vue')['default']
+    BaseLoader: typeof import('./../components/BaseLoader.vue')['default']
+    BaseLogo: typeof import('./../components/BaseLogo.vue')['default']
+    BaseWrapper: typeof import('./../components/BaseWrapper.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TheBanner: typeof import('./../components/TheBanner.vue')['default']
+    TheBottom1: typeof import('./../components/TheBottom1.vue')['default']
+    TheBottom2: typeof import('./../components/TheBottom2.vue')['default']
+    TheFooter: typeof import('./../components/TheFooter.vue')['default']
+    TheFooter1: typeof import('./../components/TheFooter1.vue')['default']
+    TheHeader: typeof import('./../components/TheHeader.vue')['default']
+    TheMain: typeof import('./../components/TheMain.vue')['default']
+    TheMiddle: typeof import('./../components/TheMiddle.vue')['default']
+    TheMiddle1: typeof import('./../components/TheMiddle1.vue')['default']
+    TheMiddle2: typeof import('./../components/TheMiddle2.vue')['default']
+    TheNav: typeof import('./../components/TheNav.vue')['default']
   }
 }
