@@ -9,7 +9,7 @@
           <img
             src="/images/main-img1.png"
             alt="Mark-Luigi"
-            class="lg:max-h-none lg:max-w-none lg:w-full lg:h-full max-w-[400px] max-h-[400px] mx-auto"
+            class="lg:max-h-none lg:max-w-none lg:w-full lg:h-full max-w-[320px] max-h-[400px] mx-auto"
           >
         </figure>
 
