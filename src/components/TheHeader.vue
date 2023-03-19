@@ -1,7 +1,7 @@
 <script setup>
 const socialMedia = ref([
-  { name: 'linkedin', url: '#', src: '/images/linkedin.png' },
-  { name: 'github', url: '#', src: '/images/github.png' }
+  { name: 'linkedin', url: 'https://www.linkedin.com/in/mark-luigi-batoctoy-47a4351b1/', src: '/images/linkedin.png' },
+  { name: 'github', url: 'https://github.com/markluigibatoks/', src: '/images/github.png' }
 ])
 </script>
 
@@ -38,7 +38,10 @@ const socialMedia = ref([
             :main-axis-spacing="3"
           >
             <template #item="{ item }">
-              <a :href="item.url">
+              <a
+                :href="item.url"
+                target="_blank"
+              >
                 <figure>
                   <img
                     :src="item.src"
