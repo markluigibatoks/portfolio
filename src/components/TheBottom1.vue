@@ -29,12 +29,11 @@ const portfolio = ref([
         <figure
           v-for="n in portfolio"
           :key="n"
-          class="shadow-violet/10 shadow-4xl"
+          class="overflow-hidden rounded-2xl shadow-violet/10 shadow-4xl"
         >
           <img
             :src="n.img"
             :alt="n.name"
-            class="rounded-2xl"
           >
         </figure>
       </div>
