@@ -35,10 +35,11 @@ const servicesOffered = ref([
         :key="n"
         class="lg:min-h-[398px] lg:gap-10 lg:mb-14 lg:flex last:mb-0 mb-5 items-center p-10 w-full rounded-[51px] shadow-4xl shadow-accent/10 bg-white"
       >
-        <figure class="lg:h-[323px] p-2 mx-auto flex justify-center items-center max-w-[357px] w-full rounded-[41px] bg-purple">
+        <figure class="lg:h-[323px] h-[156px] p-2 mx-auto flex justify-center items-center max-w-[357px] w-full rounded-[41px] bg-purple">
           <img
             :src="n.img"
             :alt="n.name"
+            class="lg:w-fit w-[100px]"
           >
         </figure>
 
