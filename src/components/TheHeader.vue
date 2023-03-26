@@ -41,6 +41,7 @@ const socialMedia = ref([
               <a
                 :href="item.url"
                 target="_blank"
+                class="hover:opacity-60"
               >
                 <figure>
                   <img
