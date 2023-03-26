@@ -18,7 +18,7 @@ const portfolio = ref([
 <template>
   <base-container class="lg:py-[91px] lg:min-h-[900px] py-10 relative z-10 bg-white">
     <section class="text-center">
-      <h2 class="lg:text-left lg:mb-9 lg:text-[length:50px] font-bold font-avalon text-2xl">
+      <h2 class="lg:text-left lg:mb-9 lg:text-[length:50px] font-bold font-avalon text-3xl">
         Portfolio
       </h2>
       <p class="lg:text-left lg:leading-[40px] lg:text-[length:23px]">

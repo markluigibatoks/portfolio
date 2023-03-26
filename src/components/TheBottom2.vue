@@ -67,7 +67,7 @@ const { slideIndex } = useSimpleSlide(testimonials.value.length)
         >
       </figure>
       <div class="relative z-10 lg:text-left lg:max-w-[467px] lg:mx-0 mx-auto max-w-[600px] text-center">
-        <h2 class="lg:text-[length:60px] lg:mb-12 mb-5 font-avalon font-bold text-2xl">
+        <h2 class="lg:text-[length:60px] lg:mb-12 font-avalon font-bold text-3xl">
           Testimonials
         </h2>
         <p class="lg:text-[length:23px]">

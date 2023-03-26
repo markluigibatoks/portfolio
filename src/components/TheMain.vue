@@ -23,7 +23,7 @@
       </div>
 
       <div class="lg:order-1 lg:w-[560px] lg:min-w-[560px] ">
-        <h1 class="lg:text-[length:60px] lg:mb-[30px] lg:leading-normal leading-tight font-avalon font-bold text-2xl">
+        <h1 class="lg:text-[length:60px] lg:mb-[30px] lg:leading-normal leading-none font-avalon font-bold text-3xl">
           Hello,
           <span class="lg:-mt-4 block">I’m <em class="lg:whitespace-normal whitespace-nowrap text-accent not-italic">MARK-LUIGI</em> </span>
           <span class="lg:-mt-7 block">Web Developer</span>
