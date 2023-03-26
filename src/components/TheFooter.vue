@@ -9,23 +9,23 @@ const socialMedia = ref([
 
 const servicesOffered = ref([
   {
-    name: 'Convert Website',
-    content: 'We are excited to post contents on the website. This space is reserved for more information about the company.',
+    name: 'Website Conversion',
+    content: "Do you have an outdated website that needs a fresh look or isn't performing the way you want it to? Let me help you convert your website into a modern, user-friendly, and high-performing platform that represents your brand and engages your audience.",
     img: '/images/middle1-img1.png'
   },
   {
     name: 'Responsive Design',
-    content: 'We are excited to post contents on the website. This space is reserved for more information about the company.',
+    content: "In today's world, it's essential to have a website that looks great and functions flawlessly on all devices, including desktops, laptops, tablets, and smartphones. I specialize in creating responsive designs that adapt to any screen size, ensuring that your website is accessible to your target audience, no matter how they access it.",
     img: '/images/middle1-img2.png'
   },
   {
     name: 'Website Animation',
-    content: 'We are excited to post contents on the website. This space is reserved for more information about the company.',
+    content: "Looking to add some life and personality to your website? I offer website animation services that can make your website stand out from the crowd. Whether you're looking for subtle animations or something more dynamic, I can help you create an engaging and interactive website that keeps your visitors coming back for more.",
     img: '/images/middle1-img3.png'
   },
   {
     name: 'Website Maintenance',
-    content: 'We are excited to post contents on the website. This space is reserved for more information about the company.',
+    content: "Keep your website running smoothly with my hassle-free maintenance services. From software updates to security patches, I take care of everything so that you can focus on your business. With regular maintenance, your website stays up-to-date, secure, and optimized for performance, providing a seamless experience for your users.",
     img: '/images/middle1-img4.png'
   }
 ])

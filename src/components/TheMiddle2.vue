@@ -50,7 +50,7 @@ const { slideIndex, handleNext, handlePrevious } = useSimpleSlide(technologiesUs
   <base-container class="lg:pt-[123px] lg:pb-0 py-10">
     <section>
       <h2 class="lg:mb-[42px] lg:text-[length:50px] lg:text-left mb-5 font-avalon font-bold text-3xl text-center">
-        Technologies Use
+        Technologies Used
       </h2>
 
       <div class="relative lg:min-h-[660px] lg:pt-[138px] flex justify-center">

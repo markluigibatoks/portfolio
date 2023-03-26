@@ -1,7 +1,7 @@
 <script setup>
 const servicesOffered = ref([
   {
-    name: 'Convert Website',
+    name: 'Website Conversion',
     content: "Do you have an outdated website that needs a fresh look or isn't performing the way you want it to? Let me help you convert your website into a modern, user-friendly, and high-performing platform that represents your brand and engages your audience.",
     img: '/images/middle1-img1.png'
   },
