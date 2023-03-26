@@ -13,7 +13,7 @@
           >
         </figure>
 
-        <figure class="xl:-top-[134px] lg:relative w-full h-full absolute top-0">
+        <figure class="animate-bounce-in xl:-top-[134px] lg:relative w-full h-full absolute top-0">
           <img
             src="/images/design-img1.png"
             alt="Circles"

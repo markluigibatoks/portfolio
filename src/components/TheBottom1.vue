@@ -29,7 +29,7 @@ const portfolio = ref([
         <figure
           v-for="n in portfolio"
           :key="n"
-          class="overflow-hidden rounded-2xl shadow-violet/10 shadow-4xl"
+          class="animate-bounce-in overflow-hidden rounded-2xl shadow-violet/10 shadow-4xl"
         >
           <img
             :src="n.img"
