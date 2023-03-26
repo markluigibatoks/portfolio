@@ -29,7 +29,7 @@ useResizeObserver(target, ([entry]) => {
 <template>
   <base-container
     ref="target"
-    class="z-50 !px-0 lg:!px-5 relative lg:border-0 section-divider"
+    class="lg:z-0 z-50 !px-0 lg:!px-5 relative lg:border-0 section-divider"
     :class="{ 'sticky top-0 left-0' : open }"
   >
     <div class="lg:pr-[233px] lg:pt-[56px] lg:pb-[49px] flex justify-between items-center">
