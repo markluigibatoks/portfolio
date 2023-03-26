@@ -129,6 +129,7 @@ const menu = [
             <a
               :href="item.url"
               target="_blank"
+              class="hover:opacity-70"
             >
               <figure>
                 <img
@@ -155,7 +156,7 @@ const menu = [
         <template #item="{ item }">
           <a
             href="#"
-            class="lg:px-0 lg:py-0 lg:w-fit lg:bg-transparent px-5 py-2 block rounded w-full bg-white"
+            class="lg:px-0 lg:py-0 lg:w-fit lg:bg-transparent lg:hover:bg-transparent lg:hover:text-inherit lg:hover:underline hover:bg-accent hover:text-white px-5 py-2 block rounded w-full bg-white"
           >
             {{ item.name }}
           </a>
