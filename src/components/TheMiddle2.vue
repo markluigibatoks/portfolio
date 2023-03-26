@@ -76,11 +76,13 @@ const { slideIndex, handleNext, handlePrevious } = useSimpleSlide(technologiesUs
 
         <article>
           <figure class="lg:mb-0 mb-3">
-            <img
-              :src="technologiesUsed[slideIndex].img"
-              :alt="technologiesUsed[slideIndex].name"
-              class="mx-auto"
-            >
+            <div class="min-h-[150px] flex justify-center items-center">
+              <img
+                :src="technologiesUsed[slideIndex].img"
+                :alt="technologiesUsed[slideIndex].name"
+                class="mx-auto"
+              >
+            </div>
             <figcaption class="lg:text-[length:49px] lg:mt-12 lg:mb-14 text-center text-xl font-avalon font-bold ">
               {{ technologiesUsed[slideIndex].name }}
             </figcaption>
