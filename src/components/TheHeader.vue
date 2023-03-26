@@ -6,6 +6,9 @@ const socialMedia = ref([
 </script>
 
 <template>
+  <div class="bg-accent text-white text-center p-2">
+    <p>The site is currently under construction and some features, such as the navigation links, are not yet functional.</p>
+  </div>
   <header class="lg:py-0 py-10 lg:section-divider">
     <base-container class="min-h-[66px]">
       <div class="lg:flex lg:justify-between lg:items-center lg:min-h-[66px] text-center">
