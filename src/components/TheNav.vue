@@ -29,7 +29,8 @@ useResizeObserver(target, ([entry]) => {
 <template>
   <base-container
     ref="target"
-    class="!px-0 lg:!px-5 relative lg:border-0 section-divider"
+    class="z-50 !px-0 lg:!px-5 relative lg:border-0 section-divider"
+    :class="{ 'sticky top-0 left-0' : open }"
   >
     <div class="lg:pr-[233px] lg:pt-[56px] lg:pb-[49px] flex justify-between items-center">
       <div
@@ -58,17 +59,22 @@ useResizeObserver(target, ([entry]) => {
         </div>
       </div>
       <nav
-        class="lg:overflow-auto overflow-hidden z-10 lg:static fixed top-0 left-0 lg:w-fit w-screen lg:!h-fit lg:bg-transparent bg-red-100 transition-all ease-in-out"
+        class="lg:overflow-auto overflow-hidden z-10 lg:static fixed top-0 left-0 lg:w-fit w-screen lg:!h-fit lg:bg-transparent bg-lavender transition-all ease-in-out"
         :class="[ open ? 'h-screen dynamic-padding lg:pt-0': 'h-0 pt-0' ]"
       >
         <base-list
-          class="px-5 lg:px-0"
           :items="menu"
           :main-axis="isLargeScreen ? 'horizontal' : 'vertical'"
           :main-axis-spacing="isLargeScreen ? 12 : 0"
+          class="lg:divide-none divide-y divide-white"
         >
           <template #item="{ item }">
-            {{ item.name }}
+            <a
+              href="#"
+              class="lg:hover:bg-transparent lg:hover:underline hover:bg-white block p-2"
+            >
+              {{ item.name }}
+            </a>
           </template>
         </base-list>
       </nav>
