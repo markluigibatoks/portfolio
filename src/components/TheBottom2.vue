@@ -60,7 +60,7 @@ const { slideIndex } = useSimpleSlide(testimonials.value.length)
         >
       </figure>
 
-      <figure class="absolute -top-10 -left-5 lg:top-[179px] lg:left-[353px]">
+      <figure class="lg:opacity-100 opacity-60 absolute -top-10 -left-5 lg:top-[179px] lg:left-[353px]">
         <img
           src="/images/blockquote.png"
           alt="Blockquote"
