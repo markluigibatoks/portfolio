@@ -13,17 +13,17 @@ const socialMedia = ref([
     <base-container class="min-h-[66px]">
       <div class="lg:flex lg:justify-between lg:items-center lg:min-h-[66px] text-center">
         <ul class="lg:flex lg:gap-10 xl:gap-20 lg:mb-0 mb-5">
-          <li class="mx-auto w-fit relative pl-7 before:content-[url('images/phone.png')] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:flex">
+          <li class="mx-auto w-fit relative pl-7 before:content-[url('/images/phone.png')] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:flex">
             <mark class="pb-1 block">(+63) 915 265 5585</mark>
           </li>
-          <li class="mx-auto w-fit relative pl-7 before:content-[url('images/email.png')] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:flex">
+          <li class="mx-auto w-fit relative pl-7 before:content-[url('/images/email.png')] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:flex">
             <a
               class="pb-1 block underline hover:no-underline"
               href="mailto:markluigibatoks@gmail.com"
               target="_blank"
             >markluigibatoks@gmail.com</a>
           </li>
-          <li class="mx-auto w-fit relative pl-7 before:content-[url('images/house.png')] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:flex">
+          <li class="mx-auto w-fit relative pl-7 before:content-[url('/images/house.png')] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:flex">
             <address class="block">
               Cebu City, Philippines 6000
             </address>
