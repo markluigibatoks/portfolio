@@ -13,6 +13,25 @@ const portfolio = ref([
     img: '/images/btm1-img3.png'
   }
 ])
+
+const portfolioElements = ref([])
+const options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0
+}
+
+onMounted(() => {
+  portfolioElements.value.forEach(element => {
+    const observer = new IntersectionObserver(([{ isIntersecting }]) => {
+      if (isIntersecting) {
+        element.classList.add('animate-bounce-in')
+        observer.unobserve(element)
+      }
+    }, options)
+    observer.observe(element)
+  })
+})
 </script>
 
 <template>
@@ -28,8 +47,9 @@ const portfolio = ref([
       <div class="lg:mt-14 md:flex-row lg:justify-between lg:flex-nowrap mt-5 flex flex-wrap justify-center items-center gap-5">
         <figure
           v-for="n in portfolio"
+          ref="portfolioElements"
           :key="n"
-          class="animate-bounce-in overflow-hidden rounded-2xl shadow-violet/10 shadow-4xl"
+          class="overflow-hidden rounded-2xl shadow-violet/10 shadow-4xl"
         >
           <img
             :src="n.img"

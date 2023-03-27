@@ -1,4 +1,21 @@
 <script setup>
+
+const circleDesign = ref()
+const options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0
+}
+
+onMounted(() => {
+  const { stop } = useIntersectionObserver(circleDesign, ([{ isIntersecting }]) => {
+    if (isIntersecting) {
+      circleDesign.value.classList.add('animate-bounce-in')
+      stop()
+    }
+  }, options)
+})
+
 </script>
 
 <template>
@@ -13,7 +30,10 @@
           >
         </figure>
 
-        <figure class="animate-bounce-in xl:-top-[134px] lg:relative w-full h-full absolute top-0">
+        <figure
+          ref="circleDesign"
+          class="xl:-top-[134px] lg:relative w-full h-full absolute top-0"
+        >
           <img
             src="/images/design-img1.png"
             alt="Circles"

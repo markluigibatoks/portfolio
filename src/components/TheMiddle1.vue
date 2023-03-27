@@ -22,6 +22,25 @@ const servicesOffered = ref([
   }
 ])
 
+const articleElements = ref([])
+const options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0
+}
+
+onMounted(() => {
+  articleElements.value.forEach(element => {
+    const observer = new IntersectionObserver(([{ isIntersecting }]) => {
+      if (isIntersecting) {
+        element.classList.add('animate-fade-in-up')
+        observer.unobserve(element)
+      }
+    }, options)
+    observer.observe(element)
+  })
+})
+
 </script>
 <template>
   <base-container class="lg:pt-[118px] lg:pb-16 py-10">
@@ -32,9 +51,9 @@ const servicesOffered = ref([
 
       <article
         v-for="n in servicesOffered"
+        ref="articleElements"
         :key="n"
-        class="animate-fade-in-up lg:min-h-[398px] lg:gap-10 lg:mb-14 lg:flex last:mb-0 mb-5 items-center p-10 w-full rounded-[51px] shadow-4xl shadow-accent/10 bg-white"
-        style="animation-fill-mode: both"
+        class="lg:min-h-[398px] lg:gap-10 lg:mb-14 lg:flex last:mb-0 mb-5 items-center p-10 w-full rounded-[51px] shadow-4xl shadow-accent/10 bg-white"
       >
         <figure class="lg:h-[323px] h-[156px] p-2 mx-auto flex justify-center items-center max-w-[357px] w-full rounded-[41px] bg-purple">
           <img
