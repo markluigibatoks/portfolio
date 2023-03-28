@@ -3,7 +3,7 @@ const slideInterval = ref()
 const slideLength = ref()
 
 function startInterval () {
-  slideInterval.value = setInterval(() => {
+  slideInterval.value = setTimeout(() => {
     handleNext()
   }, 3000)
 }
