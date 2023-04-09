@@ -155,7 +155,7 @@ const menu = [
     </section>
   </base-container>
 
-  <base-container class="dark:bg-emphasis3 text-white bg-lavender">
+  <base-container class="dark:bg-emphasis3 dark:text-white bg-lavender">
     <section class="lg:flex lg:text-left lg:py-0 py-5 min-h-[132px] justify-between items-center text-center">
       <base-list
         class="lg:px-0 lg:mb-0 lg:text-[length:20px] order-2 mb-5"

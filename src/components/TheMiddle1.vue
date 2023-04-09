@@ -43,7 +43,7 @@ onMounted(() => {
 
 </script>
 <template>
-  <base-container class="dark:bg-dark text-white lg:pt-[118px] lg:pb-16 py-10">
+  <base-container class="dark:bg-dark dark:text-white lg:pt-[118px] lg:pb-16 py-10">
     <section>
       <h2 class="lg:mb-[42px] lg:text-[length:50px] lg:text-left mb-5 font-avalon font-bold text-3xl text-center">
         Services Offered
