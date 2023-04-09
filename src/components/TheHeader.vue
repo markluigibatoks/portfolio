@@ -3,16 +3,18 @@ const socialMedia = ref([
   { name: 'linkedin', url: 'https://www.linkedin.com/in/mark-luigi-batoctoy-47a4351b1/', src: '/images/linkedin.png' },
   { name: 'github', url: 'https://github.com/markluigibatoks/', src: '/images/github.png' }
 ])
+
+const isLargeScreen = useMediaQuery('(min-width: 1024px)')
 </script>
 
 <template>
-  <div class="bg-accent text-white text-center p-2">
+  <!-- <div class="bg-accent text-white text-center p-2">
     <p>The site is currently under construction and some features, such as the navigation links, are not yet functional.</p>
-  </div>
+  </div> -->
   <header class="lg:py-0 py-10 lg:section-divider">
     <base-container class="min-h-[66px]">
       <div class="lg:flex lg:justify-between lg:items-center lg:min-h-[66px] text-center">
-        <ul class="lg:flex lg:gap-10 xl:gap-20 lg:mb-0 mb-5">
+        <ul class="xl:gap-10 lg:flex lg:gap-4 xl:gap-20 lg:mb-0 mb-5">
           <li class="mx-auto w-fit relative pl-7 before:content-[url('/images/phone.png')] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:flex">
             <mark class="pb-1 block">(+63) 915 265 5585</mark>
           </li>
@@ -30,7 +32,7 @@ const socialMedia = ref([
           </li>
         </ul>
 
-        <section class="lg:flex lg:gap-6 lg:items-center">
+        <section class="xl:gap-6 lg:flex lg:gap-2 lg:items-center">
           <h2 class="lg:mb-0 mb-2">
             Connect With Me
           </h2>
@@ -62,6 +64,10 @@ const socialMedia = ref([
           >
             Resume
           </base-button>
+
+          <base-theme-toggle
+            v-if="isLargeScreen"
+          />
         </section>
       </div>
     </base-container>

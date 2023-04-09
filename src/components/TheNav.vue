@@ -66,7 +66,7 @@ useResizeObserver(target, ([entry]) => {
           :items="menu"
           :main-axis="isLargeScreen ? 'horizontal' : 'vertical'"
           :main-axis-spacing="isLargeScreen ? 12 : 0"
-          class="lg:divide-none divide-y divide-white"
+          class="lg:divide-none lg:max-w-none max-w-[360px] mx-auto divide-y divide-white"
         >
           <template #item="{ item }">
             <a
@@ -77,6 +77,14 @@ useResizeObserver(target, ([entry]) => {
             </a>
           </template>
         </base-list>
+        <the-header v-if="!isLargeScreen" />
+        <div
+          v-if="!isLargeScreen"
+          class="p-2 max-w-[360px] mx-auto flex justify-between items-center rounded bg-iris/30"
+        >
+          <span>Appearance</span>
+          <base-theme-toggle />
+        </div>
       </nav>
     </div>
   </base-container>
