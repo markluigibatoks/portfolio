@@ -11,6 +11,7 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     BaseButton: typeof import('./../components/BaseButton.vue')['default']
     BaseContainer: typeof import('./../components/BaseContainer.vue')['default']
+    BaseGradientText: typeof import('./../components/BaseGradientText.vue')['default']
     BaseGridList: typeof import('./../components/BaseGridList.vue')['default']
     BaseHamburger: typeof import('./../components/BaseHamburger.vue')['default']
     BaseList: typeof import('./../components/BaseList.vue')['default']

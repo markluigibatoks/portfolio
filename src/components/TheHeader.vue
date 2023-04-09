@@ -26,17 +26,26 @@ const isLargeScreen = useMediaQuery('(min-width: 1024px)')
     <base-container class="min-h-[66px]">
       <div class="lg:flex lg:justify-between lg:items-center lg:min-h-[66px] text-center">
         <ul class="xl:gap-10 lg:flex lg:gap-4 xl:gap-20 lg:mb-0 mb-5">
-          <li class="mx-auto w-fit relative pl-7 before:content-[url('/images/phone.png')] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:flex">
+          <li
+            :class="isDark ? `before:content-[url('/images/phone-dark.png')]`: `before:content-[url('/images/phone.png')]`"
+            class="mx-auto w-fit relative pl-7 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:flex"
+          >
             <mark class="dark:text-white pb-1 block text-black">(+63) 915 265 5585</mark>
           </li>
-          <li class="mx-auto w-fit relative pl-7 before:content-[url('/images/email.png')] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:flex">
+          <li
+            :class="isDark ? `before:content-[url('/images/email-dark.png')]` : `before:content-[url('/images/email.png')]`"
+            class="mx-auto w-fit relative pl-7 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:flex"
+          >
             <a
               class="pb-1 block underline hover:no-underline"
               href="mailto:markluigibatoks@gmail.com"
               target="_blank"
             >markluigibatoks@gmail.com</a>
           </li>
-          <li class="mx-auto w-fit relative pl-7 before:content-[url('/images/house.png')] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:flex">
+          <li
+            :class="isDark ? `before:content-[url('/images/house-dark.png')]` : `before:content-[url('/images/house.png')]`"
+            class="mx-auto w-fit relative pl-7 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:flex"
+          >
             <address class="block">
               Cebu City, Philippines 6000
             </address>
@@ -70,7 +79,7 @@ const isLargeScreen = useMediaQuery('(min-width: 1024px)')
           </base-list>
 
           <base-button
-            color="#2A1ED2"
+            color="#063f93"
             class="lg:block hidden z-10 min-w-[125px] min-h-[49px] absolute top-[140px] right-0 rounded-full text-white"
           >
             Resume

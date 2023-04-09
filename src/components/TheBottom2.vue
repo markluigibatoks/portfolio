@@ -79,7 +79,7 @@ onMounted(() => {
         >
       </figure>
 
-      <figure class="lg:opacity-100 opacity-60 absolute -top-10 -left-5 lg:top-[179px] lg:left-[353px]">
+      <figure class="dark:opacity-30 lg:opacity-100 opacity-60 absolute -top-10 -left-5 lg:top-[179px] lg:left-[353px]">
         <img
           src="/images/blockquote.png"
           alt="Blockquote"

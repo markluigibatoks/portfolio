@@ -46,7 +46,7 @@ useResizeObserver(target, ([entry]) => {
 
         <div class="lg:hidden flex items-center">
           <base-button
-            color="#2A1ED2"
+            color="#063f93"
             class="rounded-full text-white"
           >
             Resume

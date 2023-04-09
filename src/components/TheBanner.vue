@@ -1,4 +1,6 @@
 <script setup>
+const isDark = useDark()
+
 const bnrImg1 = ref()
 const bnrImg2 = ref()
 const bnrImg3 = ref()
@@ -82,7 +84,12 @@ function animateOnScroll (element, className, options) {
         class="xl:max-w-none lg:max-w-[500px] order-1"
       >
         <h2 class="xl:text-[70px] xl:leading-[90px] lg:leading-[80px] lg:text-[60px] lg:mt-6 lg:mb-[30px] text-2xl font-avalon font-bold">
-          Building <span class="text-accent">beautiful websites</span>, one pixel at a time.
+          Building <base-gradient-text
+            :solid="!(isDark)"
+            class="text-accent"
+          >
+            {{ `beautiful websites` }}
+          </base-gradient-text>, one pixel at a time.
         </h2>
         <p>
           With a commitment to building beautiful websites one pixel at a time, I strive to provide clients with a website that truly stands out.

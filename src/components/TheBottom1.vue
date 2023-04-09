@@ -59,7 +59,7 @@ onMounted(() => {
       </div>
 
       <base-button
-        color="#2A1ED2"
+        color="#063f93"
         class="lg:mt-[78px] lg:!h-[70px] lg:!w-[191px] mt-5 rounded-full text-white"
       >
         View More

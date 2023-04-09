@@ -24,7 +24,7 @@
 
 @layer base {
   :root { 
-    --accent: 42 30 210;
+    --accent: 6 63 147;
     --purple: 237 241 255;
     --violet: 71 62 195;
     --lavender: 214 215 253;
@@ -33,6 +33,7 @@
     --emphasis1: 15 15 15;
     --emphasis2: 20 20 20;
     --emphasis3: 11 11 11;
+    --emphasis4: 51 51 51;
   }
 
   html, body {
