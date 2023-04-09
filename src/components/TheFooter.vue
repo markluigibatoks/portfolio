@@ -167,7 +167,7 @@ const menu = [
         <template #item="{ item }">
           <a
             href="#"
-            class="lg:px-0 lg:py-0 lg:w-fit lg:bg-transparent lg:hover:bg-transparent lg:hover:text-inherit lg:hover:underline hover:bg-accent hover:text-white px-5 py-2 block rounded w-full bg-white"
+            class="dark:bg-emphasis2 lg:px-0 lg:py-0 lg:w-fit lg:bg-transparent lg:hover:bg-transparent lg:hover:text-inherit lg:hover:underline hover:bg-accent hover:text-white px-5 py-2 block rounded w-full bg-white"
           >
             {{ item.name }}
           </a>
