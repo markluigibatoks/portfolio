@@ -80,7 +80,7 @@ const menu = [
       <div class="lg:mx-0 lg:w-fit lg:max-w-[250px] lg:mb-0 md:w-full mx-auto mb-10">
         <figure class="mb-[35px]">
           <img
-            src="/images/logo-2.png"
+            src="/images/logo.png"
             alt="logo"
             class="mx-auto"
           >
