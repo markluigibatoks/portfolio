@@ -16,6 +16,7 @@ declare module '@vue/runtime-core' {
     BaseList: typeof import('./../components/BaseList.vue')['default']
     BaseLoader: typeof import('./../components/BaseLoader.vue')['default']
     BaseLogo: typeof import('./../components/BaseLogo.vue')['default']
+    BaseThemeToggle: typeof import('./../components/BaseThemeToggle.vue')['default']
     BaseWrapper: typeof import('./../components/BaseWrapper.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

@@ -47,7 +47,7 @@ const { slideIndex, handleNext, handlePrevious } = useSimpleSlide(technologiesUs
 
 </script>
 <template>
-  <base-container class="lg:pt-[123px] lg:pb-0 py-10">
+  <base-container class="dark:bg-dark dark:text-white lg:pt-[123px] lg:pb-0 py-10">
     <section>
       <h2 class="lg:mb-[42px] lg:text-[length:50px] lg:text-left mb-5 font-avalon font-bold text-3xl text-center">
         Technologies Used

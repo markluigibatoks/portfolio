@@ -66,7 +66,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <base-container class="lg:pt-[187px] lg:min-h-[684px] py-10 bg-lavender">
+  <base-container class="dark:bg-dark dark:text-white lg:pt-[187px] lg:min-h-[684px] py-10 bg-lavender">
     <section class="lg:flex justify-between gap-10">
       <figure
         ref="circleDesign"

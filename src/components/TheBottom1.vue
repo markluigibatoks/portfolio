@@ -35,7 +35,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <base-container class="lg:py-[91px] lg:min-h-[900px] py-10 relative z-10 bg-white">
+  <base-container class="dark:bg-emphasis1 dark:text-white lg:py-[91px] lg:min-h-[900px] py-10 relative z-10 bg-white">
     <section class="text-center">
       <h2 class="lg:text-left lg:mb-9 lg:text-[length:50px] font-bold font-avalon text-3xl">
         Portfolio

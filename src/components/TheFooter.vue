@@ -1,10 +1,21 @@
 <script setup>
 const isLargeScreen = useMediaQuery('(min-width: 1024px)')
 const isSmallScreen = useMediaQuery('(min-width: 640px)')
+const isDark = useDark()
 
 const socialMedia = ref([
-  { name: 'linkedin', url: 'https://www.linkedin.com/in/mark-luigi-batoctoy-47a4351b1/', src: '/images/linkedin.png' },
-  { name: 'github', url: 'https://github.com/markluigibatoks/', src: '/images/github.png' }
+  {
+    name: 'linkedin',
+    url: 'https://www.linkedin.com/in/mark-luigi-batoctoy-47a4351b1/',
+    srcLight: '/images/linkedin.png',
+    srcDark: '/images/linkedin.png'
+  },
+  {
+    name: 'github',
+    url: 'https://github.com/markluigibatoks/',
+    srcLight: '/images/github.png',
+    srcDark: '/images/github-dark.png'
+  }
 ])
 
 const servicesOffered = ref([
@@ -64,7 +75,7 @@ const menu = [
 </script>
 
 <template>
-  <base-container class="lg:pt-[179px] py-10 min-h-[564px] bg-white">
+  <base-container class="dark:bg-emphasis1 dark:text-white lg:pt-[179px] py-10 min-h-[564px] bg-white">
     <section class="md:flex-row md:flex-wrap md:text-left flex flex-col justify-between gap-5 text-center">
       <div class="lg:mx-0 lg:w-fit lg:max-w-[250px] lg:mb-0 md:w-full mx-auto mb-10">
         <figure class="mb-[35px]">
@@ -100,7 +111,7 @@ const menu = [
         </h3>
 
         <ul class="flex flex-col gap-3">
-          <li>Phone: <mark>(+63) 915 265 5585</mark></li>
+          <li>Phone: <mark class="dark:text-white">(+63) 915 265 5585</mark></li>
           <li>
             Email: <a
               href="mailto:markluigibatoks@gmail.com"
@@ -133,7 +144,7 @@ const menu = [
             >
               <figure>
                 <img
-                  :src="item.src"
+                  :src="isDark ? item.srcDark : item.srcLight"
                   alt="logo"
                 >
               </figure>
@@ -144,7 +155,7 @@ const menu = [
     </section>
   </base-container>
 
-  <base-container class="bg-lavender">
+  <base-container class="dark:bg-emphasis3 text-white bg-lavender">
     <section class="lg:flex lg:text-left lg:py-0 py-5 min-h-[132px] justify-between items-center text-center">
       <base-list
         class="lg:px-0 lg:mb-0 lg:text-[length:20px] order-2 mb-5"

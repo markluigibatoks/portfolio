@@ -12,7 +12,11 @@ module.exports = {
         'purple': 'rgb(var(--purple) / <alpha-value>)',
         'violet': 'rgb(var(--violet) / <alpha-value>)',
         'lavender': 'rgb(var(--lavender) / <alpha-value>)',
-        'iris': 'rgb(var(--iris) / <alpha-value>)'
+        'iris': 'rgb(var(--iris) / <alpha-value>)',
+        'dark': 'rgb(var(--dark) / <alpha-value>)',
+        'emphasis1': 'rgb(var(--emphasis1) / <alpha-value>)',
+        'emphasis2': 'rgb(var(--emphasis2) / <alpha-value>)',
+        'emphasis3': 'rgb(var(--emphasis3) / <alpha-value>)'
       },
       fontFamily: {
         'avalon': ['Avalon', 'Arial', 'sans-serif']

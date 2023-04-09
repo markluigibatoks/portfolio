@@ -32,7 +32,7 @@ function animateOnScroll (element, className, options) {
 </script>
 
 <template>
-  <base-container class="lg:py-0 pb-10 text-center lg:text-left lg:border-0 section-divider">
+  <base-container class="dark:bg-dark dark:text-white lg:py-0 pb-10 text-center lg:text-left lg:border-0 section-divider">
     <div class="lg:pt-[49px] lg:flex lg:justify-between lg:gap-10">
       <div class="lg:order-2 sm:max-w-[638px] sm:h-[518px] mx-auto mb-5 relative w-full">
         <figure

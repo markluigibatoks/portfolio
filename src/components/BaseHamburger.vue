@@ -11,7 +11,7 @@ const emit = defineEmits(['click:hamburger'])
 
 <template>
   <button
-    class="text-gray-500 w-10 h-10 relative focus:outline-none"
+    class="dark:text-white text-gray-500 w-10 h-10 relative focus:outline-none"
     @click="emit('click:hamburger', $event)"
   >
     <span class="sr-only">Open main menu</span>

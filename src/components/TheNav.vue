@@ -29,12 +29,12 @@ useResizeObserver(target, ([entry]) => {
 <template>
   <base-container
     ref="target"
-    class="lg:z-0 z-50 !px-0 lg:!px-5 relative lg:border-0 section-divider"
+    class="dark:bg-dark dark:section-divider-dark lg:z-0 z-50 !px-0 lg:!px-5 relative lg:!border-0 section-divider"
     :class="{ 'sticky top-0 left-0' : open }"
   >
     <div class="lg:pr-[233px] lg:pt-[56px] lg:pb-[49px] flex justify-between items-center">
       <div
-        class="lg:px-0 lg:w-fit w-full px-5 py-2 z-20 flex justify-between items-center"
+        class="lg:border-0 lg:px-0 lg:w-fit w-full px-5 py-2 z-20 flex justify-between items-center"
         :class="[{ 'shadow shadow-lg': open }]"
       >
         <base-logo>
@@ -59,7 +59,7 @@ useResizeObserver(target, ([entry]) => {
         </div>
       </div>
       <nav
-        class="lg:overflow-auto overflow-hidden z-10 lg:static fixed top-0 left-0 lg:w-fit w-screen lg:!h-fit lg:bg-transparent bg-lavender transition-all ease-in-out"
+        class="dark:bg-dark lg:overflow-auto overflow-hidden z-10 lg:static fixed top-0 left-0 lg:w-fit w-screen lg:!h-fit lg:bg-transparent bg-lavender transition-all ease-in-out"
         :class="[ open ? 'h-screen dynamic-padding lg:pt-0': 'h-0 pt-0' ]"
       >
         <base-list
@@ -71,7 +71,7 @@ useResizeObserver(target, ([entry]) => {
           <template #item="{ item }">
             <a
               href="#"
-              class="lg:hover:bg-transparent lg:hover:underline hover:bg-white block p-2"
+              class="dark:text-white dark:hover:bg-black/50 lg:hover:bg-transparent lg:hover:underline hover:bg-white block p-2"
             >
               {{ item.name }}
             </a>
@@ -80,7 +80,7 @@ useResizeObserver(target, ([entry]) => {
         <the-header v-if="!isLargeScreen" />
         <div
           v-if="!isLargeScreen"
-          class="p-2 max-w-[360px] mx-auto flex justify-between items-center rounded bg-iris/30"
+          class="dark:bg-black/50 dark:text-white p-2 max-w-[360px] mx-auto flex justify-between items-center rounded bg-iris/30"
         >
           <span>Appearance</span>
           <base-theme-toggle />

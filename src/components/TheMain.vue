@@ -19,7 +19,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <base-container class="xl:h-[888px] xl:pt-[229px] xl:pb-0 py-10 ">
+  <base-container class="dark:bg-dark dark:text-white xl:h-[888px] xl:pt-[229px] xl:pb-0 py-10 ">
     <main class="lg:flex">
       <div class="lg:order-2 lg:mb-0 mb-5 relative w-full">
         <figure class="relative z-10 xl:-top-[229px] lg:top-0 lg:absolute z-10">

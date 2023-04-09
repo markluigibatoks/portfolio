@@ -1,9 +1,20 @@
 <script setup>
 const socialMedia = ref([
-  { name: 'linkedin', url: 'https://www.linkedin.com/in/mark-luigi-batoctoy-47a4351b1/', src: '/images/linkedin.png' },
-  { name: 'github', url: 'https://github.com/markluigibatoks/', src: '/images/github.png' }
+  {
+    name: 'linkedin',
+    url: 'https://www.linkedin.com/in/mark-luigi-batoctoy-47a4351b1/',
+    srcLight: '/images/linkedin.png',
+    srcDark: '/images/linkedin.png'
+  },
+  {
+    name: 'github',
+    url: 'https://github.com/markluigibatoks/',
+    srcLight: '/images/github.png',
+    srcDark: '/images/github-dark.png'
+  }
 ])
 
+const isDark = useDark()
 const isLargeScreen = useMediaQuery('(min-width: 1024px)')
 </script>
 
@@ -11,12 +22,12 @@ const isLargeScreen = useMediaQuery('(min-width: 1024px)')
   <!-- <div class="bg-accent text-white text-center p-2">
     <p>The site is currently under construction and some features, such as the navigation links, are not yet functional.</p>
   </div> -->
-  <header class="lg:py-0 py-10 lg:section-divider">
+  <header class="dark:bg-dark dark:text-white lg:py-0 py-10">
     <base-container class="min-h-[66px]">
       <div class="lg:flex lg:justify-between lg:items-center lg:min-h-[66px] text-center">
         <ul class="xl:gap-10 lg:flex lg:gap-4 xl:gap-20 lg:mb-0 mb-5">
           <li class="mx-auto w-fit relative pl-7 before:content-[url('/images/phone.png')] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:flex">
-            <mark class="pb-1 block">(+63) 915 265 5585</mark>
+            <mark class="dark:text-white pb-1 block text-black">(+63) 915 265 5585</mark>
           </li>
           <li class="mx-auto w-fit relative pl-7 before:content-[url('/images/email.png')] before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:flex">
             <a
@@ -50,7 +61,7 @@ const isLargeScreen = useMediaQuery('(min-width: 1024px)')
               >
                 <figure>
                   <img
-                    :src="item.src"
+                    :src="isDark ? item.srcDark : item.srcLight"
                     alt="logo"
                   >
                 </figure>

@@ -29,6 +29,10 @@
     --violet: 71 62 195;
     --lavender: 214 215 253;
     --iris: 162 164 255;
+    --dark: 18 18 18;
+    --emphasis1: 15 15 15;
+    --emphasis2: 20 20 20;
+    --emphasis3: 11 11 11;
   }
 
   html, body {
@@ -41,7 +45,6 @@
   mark {
     background: none;
     font-weight: bold;
-    color: #000000;
   }
 
   address {
@@ -50,5 +53,9 @@
 
   .section-divider {
     border-bottom: 2px solid white;
+  }
+
+  .section-divider-dark {
+    border-bottom: 2px solid #000000;
   }
 }

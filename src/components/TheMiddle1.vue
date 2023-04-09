@@ -43,7 +43,7 @@ onMounted(() => {
 
 </script>
 <template>
-  <base-container class="lg:pt-[118px] lg:pb-16 py-10">
+  <base-container class="dark:bg-dark text-white lg:pt-[118px] lg:pb-16 py-10">
     <section>
       <h2 class="lg:mb-[42px] lg:text-[length:50px] lg:text-left mb-5 font-avalon font-bold text-3xl text-center">
         Services Offered
@@ -53,9 +53,9 @@ onMounted(() => {
         v-for="n in servicesOffered"
         ref="articleElements"
         :key="n"
-        class="lg:min-h-[398px] lg:gap-10 lg:mb-14 lg:flex last:mb-0 mb-5 items-center p-10 w-full rounded-[51px] shadow-4xl shadow-accent/10 bg-white"
+        class="dark:bg-emphasis1 dark:shadow-transparent lg:min-h-[398px] lg:gap-10 lg:mb-14 lg:flex last:mb-0 mb-5 items-center p-10 w-full rounded-[51px] shadow-4xl shadow-accent/10 bg-white"
       >
-        <figure class="lg:h-[323px] h-[156px] p-2 mx-auto flex justify-center items-center max-w-[357px] w-full rounded-[41px] bg-purple">
+        <figure class="dark:bg-emphasis2 lg:h-[323px] h-[156px] p-2 mx-auto flex justify-center items-center max-w-[357px] w-full rounded-[41px] bg-purple">
           <img
             :src="n.img"
             :alt="n.name"

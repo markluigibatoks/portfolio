@@ -240,6 +240,7 @@
     "useScrollLock": true,
     "useSessionStorage": true,
     "useShare": true,
+    "useSimpleSlide": true,
     "useSlots": true,
     "useSorted": true,
     "useSpeechRecognition": true,
