@@ -17,7 +17,8 @@ module.exports = {
         'emphasis1': 'rgb(var(--emphasis1) / <alpha-value>)',
         'emphasis2': 'rgb(var(--emphasis2) / <alpha-value>)',
         'emphasis3': 'rgb(var(--emphasis3) / <alpha-value>)',
-        'emphasis4': 'rgb(var(--emphasis4) / <alpha-value>)'
+        'emphasis4': 'rgb(var(--emphasis4) / <alpha-value>)',
+        'accent-dark': 'rgb(var(--accent-dark) / <alpha-value>)'
       },
       fontFamily: {
         'avalon': ['Avalon', 'Arial', 'sans-serif']
