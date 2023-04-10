@@ -1,4 +1,6 @@
 <script setup>
+const isDark = useDark()
+
 const technologiesUsed = ref([
   {
     name: 'Javascript',
@@ -55,23 +57,23 @@ const { slideIndex, handleNext, handlePrevious } = useSimpleSlide(technologiesUs
 
       <div class="relative lg:min-h-[660px] lg:pt-[138px] flex justify-center">
         <base-button
-          class="lg:block xl:left-40 hidden absolute left-0 top-1/2 -translate-y-1/2"
+          class="lg:block xl:left-40 !h-min hidden absolute left-0 top-1/2 -translate-y-1/2"
           @click="handlePrevious"
         >
-          <img
-            src="/images/prev-arrow.png"
-            alt="previous"
-          >
+          <arrow-left
+            :class="[isDark ? 'text-orange' : 'text-iris']"
+            class="text-6xl"
+          />
         </base-button>
 
         <base-button
-          class="lg:block xl:right-40 hidden absolute right-0 top-1/2 -translate-y-1/2"
+          class="lg:block xl:right-40 !h-min hidden absolute right-0 top-1/2 -translate-y-1/2"
           @click="handleNext"
         >
-          <img
-            src="/images/next-arrow.png"
-            alt="next"
-          >
+          <arrow-right
+            :class="[isDark ? 'text-orange' : 'text-iris']"
+            class="text-6xl"
+          />
         </base-button>
 
         <article>
