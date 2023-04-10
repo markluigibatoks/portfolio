@@ -1,4 +1,6 @@
 <script setup>
+const isDark = useDark()
+
 const testimonials = ref([
   {
     name: 'Alex',
@@ -107,7 +109,10 @@ onMounted(() => {
             {{ testimonials[slideIndex].content }}
           </p>
           <footer class="mt-9">
-            <cite class="lg:text-[length:25px] block not-italic font-bold text-iris text-xl">{{ testimonials[slideIndex].name }}</cite>
+            <cite
+              :class="[isDark ? 'text-emphasis4' : 'text-iris']"
+              class="lg:text-[length:25px] block not-italic font-bold text-xl"
+            >{{ testimonials[slideIndex].name }}</cite>
             <cite class="block not-italic">{{ testimonials[slideIndex].job }}</cite>
           </footer>
         </blockquote>
@@ -118,7 +123,7 @@ onMounted(() => {
           v-for="(x, index) in testimonials"
           :key="x"
           class="w-[17px] h-[17px] rounded-full"
-          :class="index === slideIndex ? 'bg-violet' : 'bg-white'"
+          :class="index === slideIndex ? isDark ? 'bg-gradient-to-tl from-orange to-accent-dark' : 'bg-violet' : 'bg-white'"
         ></span>
       </div>
     </section>
