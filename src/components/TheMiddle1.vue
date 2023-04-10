@@ -67,12 +67,8 @@ onMounted(() => {
 
         <div class="text-center lg:text-left">
           <h3 class="lg:mb-6 lg:mt-0 lg:text-[length:30px] mt-5 font-avalon font-bold text-xl">
-            {{ n.name.split(' ')[0] }} <base-gradient-text
-              :solid="!(isDark)"
-              class="text-accent"
-            >
-              {{ n.name.split(' ')[1] }}
-            </base-gradient-text>
+            {{ n.name.split(' ')[0] }}
+            <span :class="[isDark ? 'text-accent-dark' : 'text-accent']"> {{ n.name.split(' ')[1] }} </span>
           </h3>
           <p class="lg:text-[length:23px] lg:leading-[40px]">
             {{ n.content }}
