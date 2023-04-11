@@ -60,7 +60,7 @@ const { slideIndex, handleNext, handlePrevious } = useSimpleSlide(technologiesUs
           class="lg:block xl:left-40 !h-min hidden absolute left-0 top-1/2 -translate-y-1/2"
           @click="handlePrevious"
         >
-          <arrow-left
+          <icon-arrow-left
             :class="[isDark ? 'text-orange' : 'text-iris']"
             class="text-6xl"
           />
@@ -70,7 +70,7 @@ const { slideIndex, handleNext, handlePrevious } = useSimpleSlide(technologiesUs
           class="lg:block xl:right-40 !h-min hidden absolute right-0 top-1/2 -translate-y-1/2"
           @click="handleNext"
         >
-          <arrow-right
+          <icon-arrow-right
             :class="[isDark ? 'text-orange' : 'text-iris']"
             class="text-6xl"
           />
