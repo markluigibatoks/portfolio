@@ -8,7 +8,7 @@ defineProps({
     type: Array,
     default: () => []
   },
-  src: {
+  img: {
     type: String,
     default: ''
   }
@@ -16,18 +16,19 @@ defineProps({
 </script>
 
 <template>
-  <div class="relative">
+  <div class="relative max-w-[360px]">
     <a
       href="#"
       target="_blank"
-      class="absolute top-0 right-0"
+      class="z-10 absolute top-0 right-0 w-10 h-8 bg-red-100"
     >
-      <icon-code-fill />
+      <icon-code-fill class="w-full h-full" />
     </a>
-    <figure class="w-20 h-20">
+    <figure class="relative w-full">
       <img
-        :src="src"
+        :src="img"
         :alt="name"
+        class="max-w-max w-full h-full object-cover"
       >
     </figure>
     <div class="grid grid-cols-12">
