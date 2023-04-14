@@ -1,4 +1,13 @@
 <script setup>
+const isDark = useDark()
+
+import IconJS from '@/components/IconJS.vue'
+import IconVueJS from '@/components/IconVueJS.vue'
+import IconPixiJS from '@/components/IconPixiJS.vue'
+import IconTailwind from '@/components/IconTailwind.vue'
+import IconThreeJS from '@/components/IconThreeJS.vue'
+import IconReact from '@/components/IconReact.vue'
+
 defineProps({
   name: {
     type: String,
@@ -13,6 +22,17 @@ defineProps({
     default: ''
   }
 })
+
+const categoryIcons = {
+  'javascript': IconJS,
+  'vuejs': IconVueJS,
+  'react': IconReact,
+  'pixijs': IconPixiJS,
+  'threejs': IconThreeJS,
+  'tailwindcss': IconTailwind
+}
+
+console.log(categoryIcons)
 </script>
 
 <template>
@@ -31,16 +51,21 @@ defineProps({
         class="max-w-max w-full h-full object-cover"
       >
     </figure>
-    <div class="grid grid-cols-12">
-      <div class="col-span-6">
+    <div class="mt-3 grid grid-cols-12">
+      <div class="col-span-6 font-[600]">
         {{ name }}
       </div>
-      <div class="col-span-6">
+      <div class="col-span-6 flex justify-end gap-1">
         <div
           v-for="n of categories"
           :key="n"
+          :class="[isDark ? 'border-orange/50 bg-orange/20' : 'border-accent']"
+          class="border rounded p-1 max-w-[32px] max-h-[32px]"
         >
-          {{ n }}
+          <component
+            :is="categoryIcons[n]"
+            class="w-full h-full"
+          />
         </div>
       </div>
     </div>
