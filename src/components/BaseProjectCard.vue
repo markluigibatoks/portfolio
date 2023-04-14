@@ -1,12 +1,12 @@
 <script setup>
-const isDark = useDark()
-
 import IconJS from '@/components/IconJS.vue'
 import IconVueJS from '@/components/IconVueJS.vue'
 import IconPixiJS from '@/components/IconPixiJS.vue'
 import IconTailwind from '@/components/IconTailwind.vue'
 import IconThreeJS from '@/components/IconThreeJS.vue'
 import IconReact from '@/components/IconReact.vue'
+
+const isDark = useDark()
 
 defineProps({
   name: {
