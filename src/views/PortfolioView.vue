@@ -9,9 +9,9 @@ const isLargeScreen = useMediaQuery('(min-width: 1024px)')
   />
   <the-nav />
   <the-header v-if="!isLargeScreen" />
-  <base-container class="dark:bg-dark dark:text-white">
-    <p class="lg:mb-20 lg:text-[length:23px] lg:leading-[40px] mb-10">
-      Greetings and welcome to my portfolio website! I'm excited to share with you some of the work that I've been involved with, ranging from web development projects to design samples and other creative pursuits. This portfolio serves as a representation of my professional abilities and experience, with the hope that it will provide you with a better understanding of who I am as a professional. Please feel free to explore my work, and if you have any questions or would like to discuss a potential project or collaboration, don't hesitate to reach out. Thank you for taking the time to visit!
+  <base-container class="py-10 dark:bg-dark dark:text-white">
+    <p class="lg:mb-20 lg:text-[length:23px] lg:leading-[40px] mb-10 text-justify">
+      Welcome to my portfolio website! Here, you'll find examples of my work in web development, design, and more. Explore my portfolio to learn more about my professional abilities and experience. If you have any questions or are interested in collaborating, feel free to contact me. Thanks for visiting!
     </p>
     <div class="grid grid-cols-12 place-content-center place-items-center gap-x-5 gap-y-20">
       <base-project-card
@@ -24,4 +24,5 @@ const isLargeScreen = useMediaQuery('(min-width: 1024px)')
       />
     </div>
   </base-container>
+  <the-footer />
 </template>
