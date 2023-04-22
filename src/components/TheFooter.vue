@@ -64,12 +64,7 @@ const contactInfo = ref([
 
 const menu = [
   { name: 'Home', url: '/' },
-  { name: 'About Me', url: '/about-me', menu: [
-    { name: 'Vision', url: '/about-me#vision' },
-    { name: 'Mission', url: '/about-me#mission' }
-  ] },
   { name: 'Portfolio', url: '/portfolio' },
-  { name: 'Contact Us', url: '/contact-us' },
   { name: 'Resume', url: '/resume' }
 ]
 </script>
@@ -100,7 +95,12 @@ const menu = [
           :main-axis-spacing="3"
         >
           <template #item="{item}">
-            {{ item.name }}
+            <a
+              href="/#services-offered"
+              class="hover:underline"
+            >
+              {{ item.name }}
+            </a>
           </template>
         </base-list>
       </div>
@@ -165,12 +165,13 @@ const menu = [
         :main-axis-alignment="isSmallScreen ? 'center' : 'start'"
       >
         <template #item="{ item }">
-          <a
-            href="#"
+          <router-link
+            :to="item.url"
             class="dark:bg-emphasis2 lg:dark:bg-transparent lg:px-0 lg:py-0 lg:w-fit lg:bg-transparent lg:hover:bg-transparent lg:hover:text-inherit lg:hover:underline hover:bg-accent hover:text-white px-5 py-2 block rounded w-full bg-white"
+            exact-active-class="underline"
           >
             {{ item.name }}
-          </a>
+          </router-link>
         </template>
       </base-list>
 

@@ -64,12 +64,13 @@ useResizeObserver(target, ([entry]) => {
           class="lg:divide-none lg:max-w-none max-w-[360px] mx-auto divide-y divide-white"
         >
           <template #item="{ item }">
-            <a
-              :href="item.url"
-              class="dark:text-white dark:hover:bg-black/50 lg:hover:bg-transparent lg:hover:underline hover:bg-white block p-2"
+            <router-link
+              :to="item.url"
+              class="dark:text-white lg:hover:bg-transparent lg:hover:underline hover:bg-white block p-2"
+              exact-active-class="underline"
             >
               {{ item.name }}
-            </a>
+            </router-link>
           </template>
         </base-list>
         <the-header v-if="!isLargeScreen" />
