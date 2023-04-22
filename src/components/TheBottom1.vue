@@ -58,12 +58,12 @@ onMounted(() => {
         </figure>
       </div>
 
-      <base-button
-        color="#063f93"
-        class="lg:mt-[78px] lg:!h-[70px] lg:!w-[191px] mt-5 rounded-full text-white"
+      <router-link
+        to="/portfolio"
+        class="lg:mt-[78px] hover:bg-accent/70 min-h-[70px] max-w-[191px] flex justify-center items-center mt-5 mx-auto rounded-full uppercase text-white bg-accent"
       >
         View More
-      </base-button>
+      </router-link>
     </section>
   </base-container>
 </template>
