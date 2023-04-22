@@ -1,5 +1,10 @@
 <script setup>
 const isLargeScreen = useMediaQuery('(min-width: 1024px)')
+
+onMounted(() => {
+  document.body.style.background = 'none'
+  document.body.classList.add('!bg-lavender')
+})
 </script>
 
 <template>
@@ -9,10 +14,25 @@ const isLargeScreen = useMediaQuery('(min-width: 1024px)')
   />
   <the-nav />
   <the-header v-if="!isLargeScreen" />
-  <base-container class="py-10 dark:bg-dark dark:text-white">
-    <p class="lg:mb-20 lg:text-[length:23px] lg:leading-[40px] mb-10 text-justify">
-      Welcome to my portfolio website! Here, you'll find examples of my work in web development, design, and more. Explore my portfolio to learn more about my professional abilities and experience. If you have any questions or are interested in collaborating, feel free to contact me. Thanks for visiting!
-    </p>
+  <div class="relative">
+    <figure>
+      <img
+        src="/images/bnr-portfolio.png"
+        alt="a man coding a website"
+        class="min-h-[360px] object-cover"
+      >
+    </figure>
+    <base-container class="flex flex-col justify-center w-full h-full absolute top-1/2 left-0 -translate-y-1/2 text-white bg-black/50">
+      <h2 class="lg:mb-10 mb-5 font-bold text-4xl">
+        Portfolio
+      </h2>
+      <p class="lg:text-[length:23px] lg:leading-[40px] md:w-1/2 text-justify">
+        This is my portfolio website showcasing my work in web development and design.
+        Contact me if you have any questions or are interested in collaborating.
+      </p>
+    </base-container>
+  </div>
+  <base-container class="py-10 dark:bg-dark dark:text-white bg-lavender">
     <div class="grid grid-cols-12 place-content-center place-items-center gap-x-5 gap-y-20">
       <base-project-card
         v-for="n of 20"

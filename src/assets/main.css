@@ -38,7 +38,7 @@
     --orange: 255 176 47;
   }
 
-  html, body {
+  body {
     font-family: 'Barlow';
     font-size: 16px;
     color: #333333;
