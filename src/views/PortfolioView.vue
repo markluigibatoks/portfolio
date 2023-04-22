@@ -15,14 +15,14 @@ onMounted(() => {
   <the-nav />
   <the-header v-if="!isLargeScreen" />
   <div class="relative">
-    <figure>
+    <figure class="relative before:w-full before:h-full before:absolute before:top-0 before:left-0 before:bg-black/50">
       <img
         src="/images/bnr-portfolio.png"
         alt="a man coding a website"
         class="min-h-[360px] object-cover"
       >
     </figure>
-    <base-container class="flex flex-col justify-center w-full h-full absolute top-1/2 left-0 -translate-y-1/2 text-white bg-black/50">
+    <base-container class="flex flex-col justify-center w-full h-full absolute top-1/2 left-0 -translate-y-1/2 text-white">
       <h2 class="lg:mb-10 mb-5 font-bold text-4xl">
         Portfolio
       </h2>
