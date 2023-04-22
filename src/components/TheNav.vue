@@ -1,12 +1,7 @@
 <script setup>
 const menu = [
   { name: 'Home', url: '/' },
-  { name: 'About Me', url: '/about-me', menu: [
-    { name: 'Vision', url: '/about-me#vision' },
-    { name: 'Mission', url: '/about-me#mission' }
-  ] },
-  { name: 'Portfolio', url: '/portfolio' },
-  { name: 'Contact Us', url: '/contact-us' }
+  { name: 'Portfolio', url: '/portfolio' }
 ]
 
 const open = ref(false)
@@ -70,7 +65,7 @@ useResizeObserver(target, ([entry]) => {
         >
           <template #item="{ item }">
             <a
-              href="#"
+              :href="item.url"
               class="dark:text-white dark:hover:bg-black/50 lg:hover:bg-transparent lg:hover:underline hover:bg-white block p-2"
             >
               {{ item.name }}
