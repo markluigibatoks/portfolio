@@ -65,7 +65,7 @@ const contactInfo = ref([
 const menu = [
   { name: 'Home', url: '/' },
   { name: 'Portfolio', url: '/portfolio' },
-  { name: 'Resume', url: '/resume' }
+  { name: 'Resume', url: '/resume.docx' }
 ]
 </script>
 
@@ -165,7 +165,15 @@ const menu = [
         :main-axis-alignment="isSmallScreen ? 'center' : 'start'"
       >
         <template #item="{ item }">
+          <a
+            v-if="item.name === 'Resume'"
+            href="/resume.pdf"
+            download
+          >
+            Resume
+          </a>
           <router-link
+            v-else
             :to="item.url"
             class="dark:bg-emphasis2 lg:dark:bg-transparent lg:px-0 lg:py-0 lg:w-fit lg:bg-transparent lg:hover:bg-transparent lg:hover:text-inherit lg:hover:underline hover:bg-accent hover:text-white px-5 py-2 block rounded w-full bg-white"
             exact-active-class="underline"

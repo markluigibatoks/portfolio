@@ -78,12 +78,13 @@ const isLargeScreen = useMediaQuery('(min-width: 1024px)')
             </template>
           </base-list>
 
-          <base-button
-            color="#063f93"
-            class="lg:block hidden z-10 min-w-[125px] min-h-[49px] absolute top-[140px] right-0 rounded-full text-white"
+          <a
+            class="lg:flex hidden hover:bg-accent/70 z-10 min-w-[125px] min-h-[49px] absolute top-[140px] right-0 justify-center items-center rounded-full uppercase text-white bg-accent"
+            href="/resume.pdf"
+            download
           >
             Resume
-          </base-button>
+          </a>
 
           <base-theme-toggle
             v-if="isLargeScreen"

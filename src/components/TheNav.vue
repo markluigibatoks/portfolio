@@ -40,12 +40,13 @@ useResizeObserver(target, ([entry]) => {
         </base-logo>
 
         <div class="lg:hidden flex items-center">
-          <base-button
-            color="#063f93"
-            class="rounded-full text-white"
+          <a
+            class="hover:bg-accent/70 z-10 min-w-[125px] min-h-[49px] flex justify-center items-center rounded-full uppercase text-white bg-accent"
+            href="/resume.pdf"
+            download
           >
             Resume
-          </base-button>
+          </a>
 
           <base-hamburger
             :open="open"
