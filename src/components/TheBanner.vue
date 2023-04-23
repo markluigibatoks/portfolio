@@ -36,7 +36,7 @@ function animateOnScroll (element, className, options) {
 <template>
   <base-container
     :class="[isDark ? 'section-divider-dark' : 'section-divider']"
-    class="dark:bg-dark dark:text-white lg:py-0 pb-10 text-center lg:text-left lg:border-0"
+    class="dark:bg-dark dark:text-white lg:py-0 py-10 text-center lg:text-left lg:border-0"
   >
     <div class="lg:pt-[49px] lg:flex lg:justify-between lg:gap-10">
       <div class="lg:order-2 sm:max-w-[638px] sm:h-[518px] mx-auto mb-5 relative w-full">

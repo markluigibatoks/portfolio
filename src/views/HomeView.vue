@@ -8,7 +8,6 @@ const isLargeScreen = useMediaQuery('(min-width: 1024px)')
     class="dark:section-divider-dark lg:section-divider"
   />
   <the-nav />
-  <the-header v-if="!isLargeScreen" />
   <the-banner />
   <the-main />
   <the-middle1 />
