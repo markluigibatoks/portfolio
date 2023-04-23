@@ -29,8 +29,8 @@ useResizeObserver(target, ([entry]) => {
   >
     <div class="lg:pr-[233px] lg:pt-[56px] lg:pb-[49px] flex justify-between items-center">
       <div
-        class="lg:border-0 lg:px-0 lg:w-fit w-full px-5 py-2 z-20 flex justify-between items-center"
-        :class="[{ 'shadow shadow-lg': open }]"
+        class="lg:border-0 lg:px-0 lg:w-fit  w-full px-5 py-2 z-20 flex justify-between items-center"
+        :class="[{ 'dark:bg-black shadow shadow-lg': open }]"
       >
         <base-logo>
           <img
@@ -67,7 +67,7 @@ useResizeObserver(target, ([entry]) => {
           <template #item="{ item }">
             <router-link
               :to="item.url"
-              class="dark:text-white lg:hover:bg-transparent lg:hover:underline hover:bg-white block p-2"
+              class="dark:text-white hover:underline block p-2"
               exact-active-class="underline"
             >
               {{ item.name }}
