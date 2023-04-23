@@ -159,13 +159,14 @@ const menu = [
             v-if="item.name === 'Resume'"
             href="/resume.pdf"
             download
+            class="hover:underline"
           >
             Resume
           </a>
           <router-link
             v-else
             :to="item.url"
-            class="dark:bg-emphasis2 lg:dark:bg-transparent lg:px-0 lg:py-0 lg:w-fit lg:bg-transparent lg:hover:bg-transparent lg:hover:text-inherit lg:hover:underline hover:bg-accent hover:text-white px-5 py-2 block rounded w-full bg-white"
+            class="dark:bg-emphasis2 lg:dark:bg-transparent lg:px-0 lg:py-0 lg:w-fit lg:bg-transparent lg:hover:bg-transparent lg:hover:text-inherit hover:underline hover:bg-accent hover:text-white px-5 py-2 block rounded w-full bg-white"
             exact-active-class="underline"
           >
             {{ item.name }}
@@ -174,7 +175,16 @@ const menu = [
       </base-list>
 
       <div class="lg:text-[length:20px] order-1">
-        &copy; Copyright 2023 | Designed by Caren C
+        Produced by
+        <a
+          class="inline underline hover:no-underline"
+          href="https://www.linkedin.com/in/mark-luigi-batoctoy-47a4351b1/"
+          target="_blank"
+        >
+          Mark-Luigi Batoctoy
+        </a>
+        <span class="lg:inline hidden"> | </span>
+        <span class="lg:inline block">Designed by Caren C</span>
       </div>
     </section>
   </base-container>
