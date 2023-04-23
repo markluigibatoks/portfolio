@@ -5,6 +5,73 @@ onMounted(() => {
   document.body.style.background = 'none'
   document.body.classList.add('!bg-lavender')
 })
+
+const myPortfolio = [
+  {
+    id: 1,
+    name: 'FEM News Homepage',
+    categories: ['vuejs', 'tailwindcss'],
+    img: '/images/portfolio/fem-news-home-page.png',
+    url: 'https://sunny-cannoli-ec7678.netlify.app/fem/news-home-page',
+    repositoryUrl: 'https://github.com/markluigibatoks/mrkl/blob/master/src/components/FEMNewsHomePage.vue'
+  },
+  {
+    id: 2,
+    name: 'FEM Dropdown',
+    categories: ['vuejs', 'tailwindcss'],
+    img: '/images/portfolio/fem-dropdown.png',
+    url: 'https://sunny-cannoli-ec7678.netlify.app/fem/dropdown',
+    repositoryUrl: 'https://github.com/markluigibatoks/mrkl/blob/master/src/components/FEMDropdown.vue'
+  },
+  {
+    id: 3,
+    name: 'FEM Notifications',
+    categories: ['vuejs', 'tailwindcss'],
+    img: '/images/portfolio/fem-notifications.png',
+    url: 'https://sunny-cannoli-ec7678.netlify.app/fem/notifications',
+    repositoryUrl: 'https://github.com/markluigibatoks/mrkl/blob/master/src/components/FEMNotifications.vue'
+  },
+  {
+    id: 4,
+    name: 'FEM Advice Slip',
+    categories: ['vuejs', 'tailwindcss'],
+    img: '/images/portfolio/fem-advice-slip.png',
+    url: 'https://sunny-cannoli-ec7678.netlify.app/fem/advice-slip',
+    repositoryUrl: 'https://github.com/markluigibatoks/mrkl/blob/master/src/components/FEMAdviceSlip.vue'
+  },
+  {
+    id: 5,
+    name: 'FEM REST Countries API',
+    categories: ['vuejs', 'tailwindcss'],
+    img: '/images/portfolio/fem-rest-countries-api.png',
+    url: 'https://sunny-cannoli-ec7678.netlify.app/fem/rest-countries-api',
+    repositoryUrl: 'https://github.com/markluigibatoks/mrkl/blob/master/src/components/FEMRESTCountriesAPI.vue'
+  },
+  {
+    id: 6,
+    name: 'Matching Pair',
+    categories: ['vuejs', 'pixijs'],
+    img: '/images/portfolio/pixi2d-matching-pair.png',
+    url: 'https://sunny-cannoli-ec7678.netlify.app/pixi2d/matching-pair',
+    repositoryUrl: 'https://github.com/markluigibatoks/mrkl/blob/master/src/components/MatchingPairView.vue'
+  },
+  {
+    id: 7,
+    name: 'Particles',
+    categories: ['vuejs', 'pixijs'],
+    img: '/images/portfolio/pixi2d-particles.png',
+    url: 'https://sunny-cannoli-ec7678.netlify.app/pixi2d/particles',
+    repositoryUrl: 'https://github.com/markluigibatoks/mrkl/blob/master/src/components/ParticlesView.vue'
+  },
+  {
+    id: 8,
+    name: 'Displacement',
+    categories: ['vuejs', 'pixijs'],
+    img: '/images/portfolio/pixi2d-displacement.png',
+    url: 'https://sunny-cannoli-ec7678.netlify.app/pixi2d/displacement',
+    repositoryUrl: 'https://github.com/markluigibatoks/mrkl/blob/master/src/components/MainView.vue'
+  }
+]
 </script>
 
 <template>
@@ -34,12 +101,14 @@ onMounted(() => {
   <base-container class="py-10 dark:bg-dark dark:text-white bg-lavender">
     <div class="grid grid-cols-12 place-content-center place-items-center gap-x-5 gap-y-20">
       <base-project-card
-        v-for="n of 20"
+        v-for="n of myPortfolio"
         :key="n"
         class="lg:col-span-4 md:col-span-6 col-span-12"
-        name="Title"
-        :categories="['vuejs', 'tailwindcss', 'pixijs']"
-        img="/images/bnr-img1.png"
+        :name="n.name"
+        :categories="n.categories"
+        :img="n.img"
+        :url="n.url"
+        :repository-url="n.repositoryUrl"
       />
     </div>
   </base-container>

@@ -20,6 +20,14 @@ defineProps({
   img: {
     type: String,
     default: ''
+  },
+  url: {
+    type: String,
+    default: ''
+  },
+  repositoryUrl: {
+    type: String,
+    default: ''
   }
 })
 
@@ -32,19 +40,18 @@ const categoryIcons = {
   'tailwindcss': IconTailwind
 }
 
-console.log(categoryIcons)
 </script>
 
 <template>
   <div class="relative max-w-[360px]">
     <a
-      href="#"
+      :href="repositoryUrl"
       target="_blank"
-      class="z-10 absolute top-0 right-0 w-10 h-8 bg-red-100"
+      class="dark:bg-orange/50 hover:opacity-70 z-10 absolute top-2 right-2 w-10 h-8 bg-orange/30"
     >
-      <icon-code-fill class="w-full h-full" />
+      <icon-code-fill class="w-full h-full text-black" />
     </a>
-    <figure class="relative w-full">
+    <figure class="relative w-full rounded-2xl overflow-hidden">
       <img
         :src="img"
         :alt="name"
@@ -52,14 +59,18 @@ console.log(categoryIcons)
       >
     </figure>
     <div class="mt-3 grid grid-cols-12">
-      <div class="col-span-6 font-[600]">
+      <a
+        :href="url"
+        target="_blank"
+        class="hover:underline col-span-6 font-[600]"
+      >
         {{ name }}
-      </div>
+      </a>
       <div class="col-span-6 flex justify-end gap-1">
         <div
           v-for="n of categories"
           :key="n"
-          :class="[isDark ? 'border-orange/50 bg-orange/20' : 'border-accent']"
+          :class="[isDark ? 'border-lavender/50 bg-lavender/20' : 'border-accent']"
           class="border rounded p-1 max-w-[32px] max-h-[32px]"
         >
           <component
