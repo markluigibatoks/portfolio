@@ -19,18 +19,15 @@ const isLargeScreen = useMediaQuery('(min-width: 1024px)')
 </script>
 
 <template>
-  <!-- <div class="bg-accent text-white text-center p-2">
-    <p>The site is currently under construction and some features, such as the navigation links, are not yet functional.</p>
-  </div> -->
   <header class="dark:bg-dark dark:text-white lg:py-0 py-10">
-    <base-container class="min-h-[66px]">
-      <div class="lg:flex lg:justify-between lg:items-center lg:min-h-[66px] text-center">
-        <ul class="xl:gap-10 lg:flex lg:gap-4 xl:gap-20 lg:mb-0 mb-5">
+    <base-container>
+      <div class="lg:flex lg:justify-between lg:items-center lg:min-h-[66px] lg:py-2 text-center">
+        <ul class="lg:flex-row lg:gap-5 flex flex-col items-center gap-3 lg:mb-0 mb-5">
           <li
             :class="isDark ? `before:content-[url('/images/phone-dark.png')]`: `before:content-[url('/images/phone.png')]`"
             class="mx-auto w-fit relative pl-7 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:flex"
           >
-            <mark class="dark:text-white pb-1 block text-black">(+63) 915 265 5585</mark>
+            <mark class="dark:text-white pb-1 block text-black">(+63) 915-265-5585</mark>
           </li>
           <li
             :class="isDark ? `before:content-[url('/images/email-dark.png')]` : `before:content-[url('/images/email.png')]`"
@@ -46,16 +43,18 @@ const isLargeScreen = useMediaQuery('(min-width: 1024px)')
             :class="isDark ? `before:content-[url('/images/house-dark.png')]` : `before:content-[url('/images/house.png')]`"
             class="mx-auto w-fit relative pl-7 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:flex"
           >
-            <address class="block">
-              Cebu City, Philippines 6000
+            <address class="text-left">
+              12 Flr. JY Square IT Building
+              <span class="xl:inline block">Salinas Drive, Lahug, Cebu City<span class="xl:inline hidden">, </span></span>
+              <span class="xl:inline block">Cebu, Philippines, 6000</span>
             </address>
           </li>
         </ul>
 
         <section class="xl:gap-6 lg:flex lg:gap-2 lg:items-center">
-          <h2 class="lg:mb-0 mb-2">
+          <!-- <h2 class="lg:mb-0 mb-2">
             Connect With Me
-          </h2>
+          </h2> -->
           <base-list
             :items="socialMedia"
             main-axis="horizontal"
