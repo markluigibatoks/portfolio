@@ -13,7 +13,6 @@ onMounted(() => {
     class="dark:section-divider-dark lg:section-divider"
   />
   <the-nav />
-  <the-header v-if="!isLargeScreen" />
   <div class="relative">
     <figure class="relative before:w-full before:h-full before:absolute before:top-0 before:left-0 before:bg-black/50">
       <img
@@ -27,8 +26,8 @@ onMounted(() => {
         Portfolio
       </h2>
       <p class="lg:text-[length:23px] lg:leading-[40px] md:w-1/2 text-justify">
-        This is my portfolio website showcasing my work in web development and design.
-        Contact me if you have any questions or are interested in collaborating.
+        My portfolio website highlights my expertise in web development.
+        Let's connect and collaborate to bring your ideas to life!
       </p>
     </base-container>
   </div>
