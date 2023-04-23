@@ -5,6 +5,7 @@ import IconPixiJS from '@/components/IconPixiJS.vue'
 import IconTailwind from '@/components/IconTailwind.vue'
 import IconThreeJS from '@/components/IconThreeJS.vue'
 import IconReact from '@/components/IconReact.vue'
+import IconNextJS from '@/components/IconNextJS.vue'
 
 const isDark = useDark()
 
@@ -37,7 +38,8 @@ const categoryIcons = {
   'react': IconReact,
   'pixijs': IconPixiJS,
   'threejs': IconThreeJS,
-  'tailwindcss': IconTailwind
+  'tailwindcss': IconTailwind,
+  'nextjs': IconNextJS
 }
 
 </script>

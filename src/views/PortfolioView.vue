@@ -70,6 +70,14 @@ const myPortfolio = [
     img: '/images/portfolio/pixi2d-displacement.png',
     url: 'https://sunny-cannoli-ec7678.netlify.app/pixi2d/displacement',
     repositoryUrl: 'https://github.com/markluigibatoks/mrkl/blob/master/src/components/MainView.vue'
+  },
+  {
+    id: 9,
+    name: 'FEM Tip Calculator',
+    categories: ['nextjs', 'react', 'tailwindcss'],
+    img: '/images/portfolio/fem-tip-calculator.png',
+    url: 'https://lovely-shortbread-4dbf8e.netlify.app/fem/tip-calculator',
+    repositoryUrl: 'https://github.com/markluigibatoks/mrkl-nextjs-hello-world'
   }
 ]
 </script>
