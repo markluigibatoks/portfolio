@@ -16,6 +16,14 @@ watchEffect(() => {
   }
 })
 
+watchEffect(() => {
+  if (open.value) {
+    document.body.style.overflowY = 'hidden'
+  } else {
+    document.body.style.overflowY = 'auto'
+  }
+})
+
 useResizeObserver(target, ([entry]) => {
   targetHeight.value = entry.borderBoxSize.reduce((acc, { blockSize }) => acc + blockSize, 0) + 'px'
 })
@@ -25,7 +33,7 @@ useResizeObserver(target, ([entry]) => {
   <base-container
     ref="target"
     class="dark:bg-dark dark:section-divider-dark lg:z-0 z-50 !px-0 lg:!px-5 relative lg:!border-0 section-divider"
-    :class="{ 'sticky top-0 left-0' : open }"
+    :class="{ 'overscroll-contain overflow-y-scroll sticky top-0 left-0' : open }"
   >
     <div class="lg:pr-[233px] lg:pt-[56px] lg:pb-[49px] flex justify-between items-center">
       <div
