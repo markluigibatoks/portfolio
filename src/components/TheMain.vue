@@ -25,9 +25,9 @@ onMounted(() => {
       <div class="lg:mb-0 mb-5 relative w-full">
         <figure class="xl:top-[254px] lg:top-1/2 lg:-translate-y-1/2 lg:absolute z-10 w-full relative z-10">
           <img
-            src="/images/main-img1.png"
+            src="/main.svg"
             alt="Mark-Luigi"
-            class="xl:max-h-[800px] lg:max-w-none lg:w-full lg:h-full max-w-[320px] mx-auto scale-x-[-1] object-contain"
+            class="xl:max-h-[800px] lg:max-w-none lg:w-full lg:h-full max-w-[320px] mx-auto object-contain"
           >
         </figure>
 

@@ -112,9 +112,8 @@ const menu = [
           </li>
           <li>
             <address>
-              12 Flr. JY Square IT Building
-              <span class="block">Salinas Drive, Lahug, Cebu City<span class="hidden">,</span></span>
-              <span class="block">Cebu, Philippines, 6000</span>
+              <span class="block">Mandaue City<span class="hidden">,</span></span>
+              <span class="block">Cebu, Philippines, 6014</span>
             </address>
           </li>
         </ul>

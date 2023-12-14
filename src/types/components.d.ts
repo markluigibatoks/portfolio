@@ -30,8 +30,6 @@ declare module '@vue/runtime-core' {
     IconTailwind: typeof import('./../components/IconTailwind.vue')['default']
     IconThreeJS: typeof import('./../components/IconThreeJS.vue')['default']
     IconVueJS: typeof import('./../components/IconVueJS.vue')['default']
-    LogosNextjs: typeof import('./../components/LogosNextjs.vue')['default']
-    LogosNextjsIcon: typeof import('./../components/LogosNextjsIcon.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TheBanner: typeof import('./../components/TheBanner.vue')['default']
