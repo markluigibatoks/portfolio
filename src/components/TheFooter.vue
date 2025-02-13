@@ -112,8 +112,7 @@ const menu = [
           </li>
           <li>
             <address>
-              <span class="block">Mandaue City<span class="hidden">,</span></span>
-              <span class="block">Cebu, Philippines, 6014</span>
+              <span class="block">Canada</span>
             </address>
           </li>
         </ul>

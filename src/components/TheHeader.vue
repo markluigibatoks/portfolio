@@ -44,8 +44,7 @@ const isLargeScreen = useMediaQuery('(min-width: 1024px)')
             class="mx-auto w-fit relative pl-7 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:flex"
           >
             <address class="text-left">
-              <span class="xl:inline block">Mandaue City<span class="xl:inline hidden">, </span></span>
-              <span class="xl:inline block">Cebu, Philippines, 6014</span>
+              <span class="xl:inline block">Canada</span>
             </address>
           </li>
         </ul>
