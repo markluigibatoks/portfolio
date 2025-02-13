@@ -4,6 +4,7 @@ const isLargeScreen = useMediaQuery('(min-width: 1024px)')
 onMounted(() => {
   document.body.style.background = 'none'
   document.body.classList.add('!bg-lavender')
+  window.scrollTo(0, 0)
 })
 
 const myPortfolio = [

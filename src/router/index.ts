@@ -13,18 +13,12 @@ const router = createRouter({
       path: '/portfolio',
       name: 'portfolio',
       component: () => import(`../views/PortfolioView.vue`)
+    },
+    { 
+      path: "*", 
+      component: HomeView 
     }
   ],
-  scrollBehavior(to, from, savedPosition) {
-    if (to.hash) {
-      return {
-        el: to.hash,
-        behavior: 'smooth',
-      }
-    }
-
-    return { top: 0 }
-  },
 })
 
 export default router
