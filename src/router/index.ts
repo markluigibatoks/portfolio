@@ -14,7 +14,11 @@ const router = createRouter({
       name: 'portfolio',
       component: () => import(`../views/PortfolioView.vue`)
     }
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    // always scroll to top
+    return { top: 0 }
+  },
 })
 
 export default router
