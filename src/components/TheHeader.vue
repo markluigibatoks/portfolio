@@ -27,7 +27,7 @@ const isLargeScreen = useMediaQuery('(min-width: 1024px)')
             :class="isDark ? `before:content-[url('/images/phone-dark.png')]`: `before:content-[url('/images/phone.png')]`"
             class="mx-auto w-fit relative pl-7 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:flex"
           >
-            <mark class="dark:text-white pb-1 block text-black">(+63) 915-265-5585</mark>
+            <mark class="dark:text-white pb-1 block text-black">+1 (825) 977-8458</mark>
           </li>
           <li
             :class="isDark ? `before:content-[url('/images/email-dark.png')]` : `before:content-[url('/images/email.png')]`"

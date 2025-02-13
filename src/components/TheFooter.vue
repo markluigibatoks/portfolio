@@ -103,7 +103,7 @@ const menu = [
         </h3>
 
         <ul class="flex flex-col gap-5 mb-5">
-          <li><mark class="dark:text-white">(+63) 915-265-5585</mark></li>
+          <li><mark class="dark:text-white">+1 (825) 977-8458</mark></li>
           <li>
             <a
               href="mailto:markluigibatoks@gmail.com"
