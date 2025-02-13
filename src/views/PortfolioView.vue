@@ -80,30 +80,6 @@ const myPortfolio = [
     url: 'https://lovely-shortbread-4dbf8e.netlify.app/fem/tip-calculator',
     repositoryUrl: 'https://github.com/markluigibatoks/mrkl-nextjs-hello-world'
   },
-  {
-    id: 10,
-    name: 'GLTF Dragon',
-    categories: ['nextjs', 'threejs'],
-    img: '/images/portfolio/three-dragon.png',
-    url: 'https://lovely-shortbread-4dbf8e.netlify.app/three/hello-worlds/dragon',
-    repositoryUrl: 'https://github.com/markluigibatoks/mrkl-nextjs-hello-world'
-  },
-  {
-    id: 11,
-    name: 'GLTF Hummingbird',
-    categories: ['nextjs', 'threejs'],
-    img: '/images/portfolio/three-hummingbird.png',
-    url: 'https://lovely-shortbread-4dbf8e.netlify.app/three/hello-worlds/hummingbird',
-    repositoryUrl: 'https://github.com/markluigibatoks/mrkl-nextjs-hello-world'
-  },
-  {
-    id: 12,
-    name: 'GLTF Painted',
-    categories: ['nextjs', 'threejs'],
-    img: '/images/portfolio/three-painted.png',
-    url: 'https://lovely-shortbread-4dbf8e.netlify.app/three/hello-worlds/painted',
-    repositoryUrl: 'https://github.com/markluigibatoks/mrkl-nextjs-hello-world'
-  }
 ]
 </script>
 
