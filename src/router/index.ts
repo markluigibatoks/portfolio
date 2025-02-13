@@ -14,6 +14,10 @@ const router = createRouter({
       path: '/portfolio',
       name: 'portfolio',
       component: () => import(`../views/PortfolioView.vue`)
+    },
+    {
+      path: '/:pathMatch(.*)',
+      component: () => import(`../views/PortfolioView.vue`)
     }
   ],
 })
